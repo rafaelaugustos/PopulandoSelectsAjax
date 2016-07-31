@@ -69,6 +69,7 @@ $(function(){
 
 
 	$('select[name=pais]').change(function(){
+		$('select[name=cidade]').val($("select[name=cidade] option:first-child").val());
 		var id = $(this).val();
 		estado(id);
 	});
